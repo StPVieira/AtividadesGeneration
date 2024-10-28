@@ -1,5 +1,8 @@
 package ex4;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class exercicio4 {
@@ -23,6 +26,10 @@ public class exercicio4 {
 		numero4 = scanner.nextFloat();
 		
 		diferenca = (numero1 * numero2) - (numero3 * numero4);
+		
+		DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+		symbols.setDecimalSeparator('.');
+		DecimalFormat df = new DecimalFormat("0.0", symbols);
 		
 		System.out.println("Diferença: " + diferenca);
 		scanner.close();
