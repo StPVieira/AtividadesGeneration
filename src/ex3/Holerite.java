@@ -1,5 +1,8 @@
 package ex3;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Holerite {
@@ -24,8 +27,12 @@ public class Holerite {
 		descontos = scanner.nextFloat();
 		
 		salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * 5) - descontos;
+
+	    DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+		symbols.setDecimalSeparator('.');
+		DecimalFormat df = new DecimalFormat("0.00", symbols);		
+		System.out.println("Salário Líquido: " + df.format(salarioLiquido));
 		
-		System.out.println("Salário Líquido: " + salarioLiquido);
 
 		scanner.close();
 	}
