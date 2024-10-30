@@ -18,8 +18,20 @@ public class ex4 {
 		while (continuar) {
 			System.out.println("Idade: ");
 			idade = Integer.valueOf(scanner.nextLine());
+			System.out.println("""
+					1 - Mulher Cis
+					2 - Homem Cis
+					3 - Não Binário
+					4 - Mulher Trans
+					5 - Homem Trans
+					6 - Outros""");
 			System.out.println("Identidade de Gênero: ");
 			idGenero = Integer.valueOf(scanner.nextLine());
+			System.out.println("""
+					1 - Backend
+					2 - Frontend
+					3 - Mobile
+					4 - FullStack""");
 			System.out.println("Pessoa Desenvolvedora: ");
 			pessoaDev = Integer.valueOf(scanner.nextLine());
 			somaIdade += idade;
