@@ -26,7 +26,7 @@ public class ex4 {
 		}
 		System.out.println("Média de notas do ano por aluno: ");
 		for (float nota : mediaClasse) {
-			System.out.printf("%.1f%n",nota);
+			System.out.printf("%.1f ",nota);
 		}
 		scanner.close();
 	}
