@@ -29,6 +29,8 @@ public class ex1 {
 			case 1:
 				System.out.println("Digite o nome do cliente que deseja adicionar: ");
 				fila.add(scanner.nextLine());
+				pause(1000);
+				System.out.println("Cliente adicionado!");
 				break;
 			case 2:
 				System.out.println("Listando todos os clientes... ");
